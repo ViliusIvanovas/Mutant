@@ -1,21 +1,27 @@
-﻿Mutant John = new Mutant("John");
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Mutant John = new Mutant("John");
 
-Mutant Jane = new Mutant("Jane");
+        Mutant Jane = new Mutant("Jane");
 
-John.GetInfo();
-Jane.GetInfo();
+        John.GetInfo();
+        Jane.GetInfo();
 
-John.Greet(Jane);
-Jane.Greet(John);
+        John.Greet(Jane);
+        Jane.Greet(John);
 
-Park goofySpook = new Park("Goofy spook", 33);
+        Park goofySpook = new Park("Goofy spook", 33);
 
-goofySpook.Entrance(John);
-goofySpook.Entrance(Jane);
+        goofySpook.Entrance(John);
+        goofySpook.Entrance(Jane);
 
-Park elderlyHorror = new Park("Elderly Horror", 70);
+        Park elderlyHorror = new Park("Elderly Horror", 70);
 
-elderlyHorror.Entrance(John);
-elderlyHorror.Entrance(Jane);
+        elderlyHorror.Entrance(John);
+        elderlyHorror.Entrance(Jane);
 
-Console.ReadKey();
+        Console.ReadKey();
+    }
+}
